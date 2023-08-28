@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 1fr 4fr;
+}
+
+#container div {
+	padding: 15px;
+	font-weight: bold;
+}
+
+#sidebar {
+	background-color: #0ea5e9;
+	box-shadow: 0px 0px 5px 0px gray;
+	grid-column: 1 / 2;
+	grid-row: 1 / span 2;
+}
+
+#header {
+	background-color: white;
+}
+
+#main-content {
+	display: flex;
+	width: 100%;
+	background-color: #dbeafe;
+	gap: 16px;
+}
+
+/* #project {
+}
+
+.card-project {
+	background-color: white;
+}
+
+#project p {
+	font-size: 18px;
+} */
