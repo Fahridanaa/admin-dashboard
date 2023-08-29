@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 #container {
@@ -8,6 +9,7 @@
 	height: 100vh;
 	grid-template-columns: 1fr 4fr;
 	grid-template-rows: 1fr 4fr;
+	background-color: #e2e8f0;
 }
 
 #sidebar {
@@ -19,30 +21,73 @@
 
 #header {
 	background-color: white;
+	grid-column: 2/3;
+	grid-row: 1/2;
 }
 
 #main-content {
 	display: grid;
 	height: 100%;
-	background-color: #dbeafe;
 	gap: 16px;
-	grid-template-columns: 2fr 1fr;
+	padding-bottom: 56px;
+	grid-template-columns: 3fr 1fr;
 	grid-template-rows: 1fr 1fr;
 }
 
 #project {
-	display: grid;
+	display: flex;
 	grid-row: 1/3;
-	grid-template-columns: ;
+	margin-left: 20px;
+	margin-top: 20px;
+	gap: 8px;
+	flex-direction: column;
+}
 
+.cards {
+	display: grid;
+	height: 100%;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	grid-auto-rows: 200px;
+	gap: 26px;
+}
+
+.card {
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px 0px gray;
 }
 
 .card-project {
-	background-color: white;
+	display: grid;
+	grid-template-columns: 1fr 50fr;
+	overflow: hidden;
+}
+
+.color {
+	background-color: orange;
 }
 
 #project p {
 	font-size: 18px;
 }
 
+.title-project p {
+	font-weight: 900;
+}
 
+.content {
+	padding: 35px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.icon {
+	align-self: flex-end;
+	display: flex;
+	width: 40%;
+	height: 15%;
+	justify-content: space-around;
+	font-size: 1.6em;
+}
