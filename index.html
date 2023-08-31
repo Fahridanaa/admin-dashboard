@@ -1,229 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css
-"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Admin Dashboard</title>
-  </head>
-  <body>
-    <div id="container">
-      <div id="header">
-        <div id="navbar">
-          <div id="search-bar">
-            <span class="mdi mdi-magnify"></span>
-            <input type="text">
-          </div>
-          <div id="profile-pic">
-            <span class="mdi mdi-bell-ring-outline"></span>
-            <div class="circle">
-              <img src="assets/jurica-koletic-7YVZYZeITc8-unsplash.jpg" alt="">
-            </div>
-            <h4>Fahridana</h4>
-          </div>
-        </div>
-        <div id="work"></div>
-      </div>
-      <div id="sidebar">
-        <div class="dashboard">
-          <span class="mdi mdi-view-dashboard"></span>
-          Dashboard
-        </div>
-        <div class="main-menu">
-          <div class="home">
-            <span class="mdi mdi-home"></span>
-            Home
-          </div>
-          <div class="profile">
-            <span class="mdi mdi-account-outline"></span>
-            Profile
-          </div>
-          <div class="messages">
-            <span class="mdi mdi-message"></span>
-            Messages
-          </div>
-          <div class="history">
-            <span class="mdi mdi-history"></span>
-            History
-          </div>
-          <div class="tasks">
-            <span class="mdi mdi-note-multiple"></span>
-            Tasks
-          </div>
-          <div class="communities">
-            <span class="mdi mdi-account-group"></span>
-            Communities
-          </div>
-        </div>
-        <div class="side-menu">
-          <div class="settings">
-            <span class="mdi mdi-cog"></span>
-            Settings
-          </div>
-          <div class="supports">
-            <span class="mdi mdi-help-box"></span>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css
+" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Admin Dashboard</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<div id="navbar">
+					<div id="search-bar">
+						<span class="mdi mdi-magnify"></span>
+						<input type="text" placeholder="Search..." />
+					</div>
+					<div id="profile-pic">
+						<span class="mdi mdi-bell-ring-outline"></span>
+						<div class="small circle">
+							<img
+								src="assets/jurica-koletic-7YVZYZeITc8-unsplash.jpg"
+								alt="" />
+						</div>
+						<h4>Fahridana</h4>
+					</div>
+				</div>
+				<div id="navbar2">
+					<div id="avatar">
+						<div class="big-profile circle">
+							<img
+								src="assets/jurica-koletic-7YVZYZeITc8-unsplash.jpg"
+								alt="" />
+						</div>
+						<div class="greeting">
+							<p>Hi there,</p>
+							<h2>Fahridana (@fahridanaa)</h2>
+						</div>
+					</div>
+					<div id="button">
+						<button id="new">New</button>
+						<button id="upload">Upload</button>
+						<button id="share">Share</button>
+					</div>
+				</div>
+			</div>
+			<div id="sidebar">
+				<div class="dashboard">
+					<span class="mdi mdi-view-dashboard"></span>
+					Dashboard
+				</div>
+				<div class="main-menu">
+					<div class="home">
+						<span class="mdi mdi-home"></span>
+						Home
+					</div>
+					<div class="profile">
+						<span class="mdi mdi-account-outline"></span>
+						Profile
+					</div>
+					<div class="messages">
+						<span class="mdi mdi-message"></span>
+						Messages
+					</div>
+					<div class="history">
+						<span class="mdi mdi-history"></span>
+						History
+					</div>
+					<div class="tasks">
+						<span class="mdi mdi-note-multiple"></span>
+						Tasks
+					</div>
+					<div class="communities">
+						<span class="mdi mdi-account-group"></span>
+						Communities
+					</div>
+				</div>
+				<div class="side-menu">
+					<div class="settings">
+						<span class="mdi mdi-cog"></span>
+						Settings
+					</div>
+					<div class="supports">
+						<span class="mdi mdi-help-box"></span>
 						Supports
-          </div>
-          <div class="privacy">
-            <span class="mdi mdi-shield-check"></span>
+					</div>
+					<div class="privacy">
+						<span class="mdi mdi-shield-check"></span>
 						Privacy
-          </div>
-        </div>
-      </div>
-      <div id="main-content">
-        <div id="project">
-          <div class="title title-project">
-            <p>Your Project</p>
-          </div>
-          <div class="cards">
-            <div class="card card-project">
-              <div class="color"></div>
-              <div class="content article-content">
-                <div class="write">
-                  <h3>Article Title</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Delectus laboriosam inventore quo fuga exercitationem est?
-                  </p>
-                </div>
-                <div class="icon">
-                  <span class="mdi mdi-star-plus-outline"></span>
-                  <span class="mdi mdi-eye-plus-outline"></span>
-                  <span class="mdi mdi-share"></span>
-                </div>
-              </div>
-            </div>
-            <div class="card card-project">
-              <div class="color"></div>
-              <div class="content article-content">
-                <div class="write">
-                  <h3>Article Title</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Delectus laboriosam inventore quo fuga exercitationem est?
-                  </p>
-                </div>
-                <div class="icon">
-                  <span class="mdi mdi-star-plus-outline"></span>
-                  <span class="mdi mdi-eye-plus-outline"></span>
-                  <span class="mdi mdi-share"></span>
-                </div>
-              </div>
-            </div>
-            <div class="card card-project">
-              <div class="color"></div>
-              <div class="content article-content">
-                <div class="write">
-                  <h3>Article Title</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Delectus laboriosam inventore quo fuga exercitationem est?
-                  </p>
-                </div>
-                <div class="icon">
-                  <span class="mdi mdi-star-plus-outline"></span>
-                  <span class="mdi mdi-eye-plus-outline"></span>
-                  <span class="mdi mdi-share"></span>
-                </div>
-              </div>
-            </div>
-            <div class="card card-project">
-              <div class="color"></div>
-              <div class="content article-content">
-                <div class="write">
-                  <h3>Article Title</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Delectus laboriosam inventore quo fuga exercitationem est?
-                  </p>
-                </div>
-                <div class="icon">
-                  <span class="mdi mdi-star-plus-outline"></span>
-                  <span class="mdi mdi-eye-plus-outline"></span>
-                  <span class="mdi mdi-share"></span>
-                </div>
-              </div>
-            </div>
-            <div class="card card-project">
-              <div class="color"></div>
-              <div class="content article-content">
-                <div class="write">
-                  <h3>Article Title</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Delectus laboriosam inventore quo fuga exercitationem est?
-                  </p>
-                </div>
-                <div class="icon">
-                  <span class="mdi mdi-star-plus-outline"></span>
-                  <span class="mdi mdi-eye-plus-outline"></span>
-                  <span class="mdi mdi-share"></span>
-                </div>
-              </div>
-            </div>
-            <div class="card card-project">
-              <div class="color"></div>
-              <div class="content article-content">
-                <div class="write">
-                  <h3>Article Title</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Delectus laboriosam inventore quo fuga exercitationem est?
-                  </p>
-                </div>
-                <div class="icon">
-                  <span class="mdi mdi-star-plus-outline"></span>
-                  <span class="mdi mdi-eye-plus-outline"></span>
-                  <span class="mdi mdi-share"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="anouncements">
-          <div class="title">
-            <p>anouncements</p>
-          </div>
-          <div class="card card-anouncements">
-            <div class="content anouncements-content">
-              <div class="section">
-                <h3>Site Maintenance</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quidem dicta inventore aliquam quae?
-                </p>
-              </div>
-              <hr />
-              <div class="section">
-                <h3>Community Share Day</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quidem dicta inventore aliquam quae?
-                </p>
-              </div>
-              <hr />
-              <div class="section">
-                <h3>Updated Privacy Policy</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quidem dicta inventore aliquam quae?
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="trending">
-          <div class="title">
-            <p>trending</p>
-          </div>
-          <div class="card card-trending"></div>
-        </div>
-      </div>
-    </div>
-  </body>
+					</div>
+				</div>
+			</div>
+			<div id="main-content">
+				<div id="project">
+					<div class="title title-project">
+						<p>Your Project</p>
+					</div>
+					<div class="cards">
+						<div class="card card-project">
+							<div class="color"></div>
+							<div class="content article-content">
+								<div class="write">
+									<h3>Article Title</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Delectus laboriosam inventore quo fuga exercitationem est?
+									</p>
+								</div>
+								<div class="icon">
+									<span class="mdi mdi-star-plus-outline"></span>
+									<span class="mdi mdi-eye-plus-outline"></span>
+									<span class="mdi mdi-share"></span>
+								</div>
+							</div>
+						</div>
+						<div class="card card-project">
+							<div class="color"></div>
+							<div class="content article-content">
+								<div class="write">
+									<h3>Article Title</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Delectus laboriosam inventore quo fuga exercitationem est?
+									</p>
+								</div>
+								<div class="icon">
+									<span class="mdi mdi-star-plus-outline"></span>
+									<span class="mdi mdi-eye-plus-outline"></span>
+									<span class="mdi mdi-share"></span>
+								</div>
+							</div>
+						</div>
+						<div class="card card-project">
+							<div class="color"></div>
+							<div class="content article-content">
+								<div class="write">
+									<h3>Article Title</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Delectus laboriosam inventore quo fuga exercitationem est?
+									</p>
+								</div>
+								<div class="icon">
+									<span class="mdi mdi-star-plus-outline"></span>
+									<span class="mdi mdi-eye-plus-outline"></span>
+									<span class="mdi mdi-share"></span>
+								</div>
+							</div>
+						</div>
+						<div class="card card-project">
+							<div class="color"></div>
+							<div class="content article-content">
+								<div class="write">
+									<h3>Article Title</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Delectus laboriosam inventore quo fuga exercitationem est?
+									</p>
+								</div>
+								<div class="icon">
+									<span class="mdi mdi-star-plus-outline"></span>
+									<span class="mdi mdi-eye-plus-outline"></span>
+									<span class="mdi mdi-share"></span>
+								</div>
+							</div>
+						</div>
+						<div class="card card-project">
+							<div class="color"></div>
+							<div class="content article-content">
+								<div class="write">
+									<h3>Article Title</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Delectus laboriosam inventore quo fuga exercitationem est?
+									</p>
+								</div>
+								<div class="icon">
+									<span class="mdi mdi-star-plus-outline"></span>
+									<span class="mdi mdi-eye-plus-outline"></span>
+									<span class="mdi mdi-share"></span>
+								</div>
+							</div>
+						</div>
+						<div class="card card-project">
+							<div class="color"></div>
+							<div class="content article-content">
+								<div class="write">
+									<h3>Article Title</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Delectus laboriosam inventore quo fuga exercitationem est?
+									</p>
+								</div>
+								<div class="icon">
+									<span class="mdi mdi-star-plus-outline"></span>
+									<span class="mdi mdi-eye-plus-outline"></span>
+									<span class="mdi mdi-share"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="anouncements">
+					<div class="title">
+						<p>anouncements</p>
+					</div>
+					<div class="card card-anouncements">
+						<div class="content anouncements-content">
+							<div class="section">
+								<h3>Site Maintenance</h3>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Quidem dicta inventore aliquam quae?
+								</p>
+							</div>
+							<hr />
+							<div class="section">
+								<h3>Community Share Day</h3>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Quidem dicta inventore aliquam quae?
+								</p>
+							</div>
+							<hr />
+							<div class="section">
+								<h3>Updated Privacy Policy</h3>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Quidem dicta inventore aliquam quae?
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="trending">
+					<div class="title">
+						<p>trending</p>
+					</div>
+					<div class="card card-trending">
+						<div class="content trending-content">
+							<div class="account">
+								<div class="small circle">
+									<img
+										src="assets/jurica-koletic-7YVZYZeITc8-unsplash.jpg"
+										alt="" />
+								</div>
+								<div class="account-name">
+									<div class="tag">@tegan</div>
+									<div class="name">World Peace Builder</div>
+								</div>
+							</div>
+							<div class="account">
+								<div class="small circle">
+									<img
+										src="assets/jurica-koletic-7YVZYZeITc8-unsplash.jpg"
+										alt="" />
+								</div>
+								<div class="account-name">
+									<div class="tag">@morgan</div>
+									<div class="name">Super Cool Project</div>
+								</div>
+							</div>
+							<div class="account">
+								<div class="small circle">
+									<img
+										src="assets/jurica-koletic-7YVZYZeITc8-unsplash.jpg"
+										alt="" />
+								</div>
+								<div class="account-name">
+									<div class="tag">@kendall</div>
+									<div class="name">Life Changing App</div>
+								</div>
+							</div>
+							<div class="account">
+								<div class="small circle">
+									<img
+										src="assets/jurica-koletic-7YVZYZeITc8-unsplash.jpg"
+										alt="" />
+								</div>
+								<div class="account-name">
+									<div class="tag">@alex</div>
+									<div class="name">No Traffic Maker</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
